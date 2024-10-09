@@ -1,0 +1,228 @@
+ # def setup_billing_ui(self):
+    #     self.root.geometry("1366x768")
+    #     self.root.resizable(0, 0)
+    #     self.root.title("Amir Traders Billing System")
+    #
+    #     # Load the image and keep a reference to it
+    #     try:
+    #         self.img = PhotoImage(file="Images/bill_window.png")
+    #         self.label = tk.Label(self.root, image=self.img)  # Set the image here
+    #         self.label.place(relx=0, rely=0, width=1366, height=768)
+    #     except Exception as e:
+    #         print("Failed to load image. Check the path:", e)
+    #
+    #     # Create a label for the username
+    #     self.message = Label(self.root)
+    #     self.message.place(relx=0.038, rely=0.055, width=136, height=30)
+    #     self.message.configure(font="-family {Poppins} -size 10")
+    #     self.message.configure(foreground="#000000")
+    #     self.message.configure(background="#ffffff")
+    #     self.message.configure(text="username")
+    #     self.message.configure(anchor="w")
+    #
+    #     # Create a label to show the current time
+    #     self.clock = Label(self.root)
+    #     self.clock.place(relx=0.9, rely=0.065, width=102, height=36)
+    #     self.clock.configure(font="-family {Poppins Light} -size 12")
+    #     self.clock.configure(foreground="#000000")
+    #     self.clock.configure(background="#ffffff")
+    #
+    #     # Create input fields for customer details
+    #     # Entry field for customer name
+    #     self.entry1 = Entry(self.root)
+    #     self.entry1.place(relx=0.509, rely=0.23, width=240, height=24)
+    #     self.entry1.configure(font="-family {Poppins} -size 12")
+    #     self.entry1.configure(relief="flat")
+    #     self.entry1.configure(textvariable=self.cust_name)
+    #
+    #     # Entry field for customer number
+    #     self.entry2 = Entry(self.root)
+    #     self.entry2.place(relx=0.791, rely=0.23, width=240, height=24)
+    #     self.entry2.configure(font="-family {Poppins} -size 12")
+    #     self.entry2.configure(relief="flat")
+    #     self.entry2.configure(textvariable=self.cust_num)
+    #
+    #     # Entry field for searching customer bill
+    #     self.entry3 = Entry(self.root)
+    #     self.entry3.place(relx=0.102, rely=0.23, width=240, height=24)
+    #     self.entry3.configure(font="-family {Poppins} -size 12")
+    #     self.entry3.configure(relief="flat")
+    #     self.entry3.configure(textvariable=self.cust_search_bill)
+    #
+    #     # Create buttons for different actions
+    #     # Logout button
+    #     self.button1 = Button(self.root)
+    #     self.button1.place(relx=0.031, rely=0.104, width=76, height=23)
+    #     self.button1.configure(relief="flat")
+    #     self.button1.configure(overrelief="flat")
+    #     self.button1.configure(activebackground="#CF1E14")
+    #     self.button1.configure(cursor="hand2")
+    #     self.button1.configure(foreground="#ffffff")
+    #     self.button1.configure(background="#CF1E14")
+    #     self.button1.configure(font="-family {Poppins SemiBold} -size 12")
+    #     self.button1.configure(borderwidth="0")
+    #     self.button1.configure(text="""Logout""")
+    #     self.button1.configure(command=self.logout)
+    #
+    #
+    #     # Search button for searching customer bills
+    #     self.button2 = Button(self.root)
+    #     self.button2.place(relx=0.315, rely=0.234, width=76, height=23)
+    #     self.button2.configure(relief="flat")
+    #     self.button2.configure(overrelief="flat")
+    #     self.button2.configure(activebackground="#CF1E14")
+    #     self.button2.configure(cursor="hand2")
+    #     self.button2.configure(foreground="#ffffff")
+    #     self.button2.configure(background="#CF1E14")
+    #     self.button2.configure(font="-family {Poppins SemiBold} -size 12")
+    #     self.button2.configure(borderwidth="0")
+    #     self.button2.configure(text="""Search""")
+    #     self.button2.configure(command=self.search_bill)
+    #
+    #     # Button to calculate the total bill
+    #     self.button3 = Button(self.root)
+    #     self.button3.place(relx=0.048, rely=0.885, width=86, height=25)
+    #     self.button3.configure(relief="flat")
+    #     self.button3.configure(overrelief="flat")
+    #     self.button3.configure(activebackground="#CF1E14")
+    #     self.button3.configure(cursor="hand2")
+    #     self.button3.configure(foreground="#ffffff")
+    #     self.button3.configure(background="#CF1E14")
+    #     self.button3.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button3.configure(borderwidth="0")
+    #     self.button3.configure(text="""Total""")
+    #     self.button3.configure(command=self.total_bill)
+    #
+    #     # Generate bill button
+    #     self.button4 = Button(self.root)
+    #     self.button4.place(relx=0.141, rely=0.885, width=84, height=25)
+    #     self.button4.configure(relief="flat")
+    #     self.button4.configure(overrelief="flat")
+    #     self.button4.configure(activebackground="#CF1E14")
+    #     self.button4.configure(cursor="hand2")
+    #     self.button4.configure(foreground="#ffffff")
+    #     self.button4.configure(background="#CF1E14")
+    #     self.button4.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button4.configure(borderwidth="0")
+    #     self.button4.configure(text="""Generate""")
+    #     self.button4.configure(command=self.gen_bill)
+    #
+    #     # Clear all inputs button
+    #     self.button5 = Button(self.root)
+    #     self.button5.place(relx=0.230, rely=0.885, width=86, height=25)
+    #     self.button5.configure(relief="flat")
+    #     self.button5.configure(overrelief="flat")
+    #     self.button5.configure(activebackground="#CF1E14")
+    #     self.button5.configure(cursor="hand2")
+    #     self.button5.configure(foreground="#ffffff")
+    #     self.button5.configure(background="#CF1E14")
+    #     self.button5.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button5.configure(borderwidth="0")
+    #     self.button5.configure(text="""Clear""")
+    #     self.button5.configure(command=self.clear_bill)
+    #
+    #     # Exit button to close the application
+    #     self.button6 = Button(self.root)
+    #     self.button6.place(relx=0.322, rely=0.885, width=86, height=25)
+    #     self.button6.configure(relief="flat")
+    #     self.button6.configure(overrelief="flat")
+    #     self.button6.configure(activebackground="#CF1E14")
+    #     self.button6.configure(cursor="hand2")
+    #     self.button6.configure(foreground="#ffffff")
+    #     self.button6.configure(background="#CF1E14")
+    #     self.button6.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button6.configure(borderwidth="0")
+    #     self.button6.configure(text="""Exit""")
+    #     self.button6.configure(command=exit)
+    #
+    #
+    #     # Add to cart button
+    #     self.button7 = Button(self.root)
+    #     self.button7.place(relx=0.098, rely=0.734, width=86, height=26)
+    #     self.button7.configure(relief="flat")
+    #     self.button7.configure(overrelief="flat")
+    #     self.button7.configure(activebackground="#CF1E14")
+    #     self.button7.configure(cursor="hand2")
+    #     self.button7.configure(foreground="#ffffff")
+    #     self.button7.configure(background="#CF1E14")
+    #     self.button7.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button7.configure(borderwidth="0")
+    #     self.button7.configure(text="""Add To Cart""")
+    #     self.button7.configure(command=self.add_to_cart)
+    #
+    #     # Clear selected item from the cart
+    #     self.button8 = Button(self.root)
+    #     self.button8.place(relx=0.274, rely=0.734, width=84, height=26)
+    #     self.button8.configure(relief="flat")
+    #     self.button8.configure(overrelief="flat")
+    #     self.button8.configure(activebackground="#CF1E14")
+    #     self.button8.configure(cursor="hand2")
+    #     self.button8.configure(foreground="#ffffff")
+    #     self.button8.configure(background="#CF1E14")
+    #     self.button8.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button8.configure(borderwidth="0")
+    #     self.button8.configure(text="""Clear""")
+    #     self.button8.configure(command=self.clear_selection)
+    #
+    #     # Remove selected product from the cart
+    #     self.button9 = Button(self.root)
+    #     self.button9.place(relx=0.194, rely=0.734, width=68, height=26)
+    #     self.button9.configure(relief="flat")
+    #     self.button9.configure(overrelief="flat")
+    #     self.button9.configure(activebackground="#CF1E14")
+    #     self.button9.configure(cursor="hand2")
+    #     self.button9.configure(foreground="#ffffff")
+    #     self.button9.configure(background="#CF1E14")
+    #     self.button9.configure(font="-family {Poppins SemiBold} -size 10")
+    #     self.button9.configure(borderwidth="0")
+    #     self.button9.configure(text="""Remove""")
+    #     self.button9.configure(command=self.remove_product)
+    #
+    #     # Dropdown menu for selecting product category
+    #     text_font = ("Poppins", "8")
+    #     self.combo1 = ttk.Combobox(self.root)
+    #     self.combo1.place(relx=0.035, rely=0.408, width=477, height=26)
+    #
+    #     # Fetch categories from the inventory using the centralized database handler
+    #     # categories = self.db_handler.fetch_product_categories()
+    #     # self.combo1.configure(values=categories)
+    #     self.combo1.configure(state="readonly")
+    #     self.combo1.configure(font="-family {Poppins} -size 8")
+    #     self.combo1.option_add("*TCombobox*Listbox.font", text_font)
+    #     self.combo1.option_add("*TCombobox*Listbox.selectBackground", "#D2463E")
+    #
+    #
+    #     # Dropdown menus for other selections (disabled by default)
+    #     self.combo2 = ttk.Combobox(self.root)
+    #     self.combo2.place(relx=0.035, rely=0.479, width=477, height=26)
+    #     self.combo2.configure(font="-family {Poppins} -size 8")
+    #     self.combo2.option_add("*TCombobox*Listbox.font", text_font)
+    #     self.combo2.configure(state="disabled")
+    #
+    #     # Dropdown menu for selecting product details (disabled by default)
+    #     self.combo3 = ttk.Combobox(self.root)
+    #     self.combo3.place(relx=0.035, rely=0.551, width=477, height=26)
+    #     self.combo3.configure(state="disabled")
+    #     self.combo3.configure(font="-family {Poppins} -size 8")
+    #     self.combo3.option_add("*TCombobox*Listbox.font", text_font)
+    #
+    #
+    #     # Entry field for additional information (disabled by default)
+    #     self.entry4 = ttk.Entry(self.root)
+    #     self.entry4.place(relx=0.035, rely=0.629, width=477, height=26)
+    #     self.entry4.configure(font="-family {Poppins} -size 8")
+    #     self.entry4.configure(foreground="#000000")
+    #     self.entry4.configure(state="disabled")
+    #
+    #     # Scrolled text widget for displaying product/cart details (disabled by default)
+    #     self.Scrolledtext1 = tkst.ScrolledText(self.root)
+    #     self.Scrolledtext1.place(relx=0.439, rely=0.586, width=695, height=275)
+    #     self.Scrolledtext1.configure(borderwidth=0)
+    #     self.Scrolledtext1.configure(font="-family {Podkova} -size 8")
+    #     self.Scrolledtext1.configure(state="disabled")
+    #
+    #
+    #     self.combo1.bind("<<ComboboxSelected>>", self.get_category)
+
+
+    # ==============================================================================
