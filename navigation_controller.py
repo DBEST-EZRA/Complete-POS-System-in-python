@@ -19,7 +19,7 @@ class NavigationController:
         LoginUI(self.auth_service, self, self.root)
         # self.current_window = login_window
 
-    def show_billing_window(self):
+    def show_billing_window(self, username):
         if self.current_window:  # Hide the current window if it exists
             self.current_window.withdraw()
 
@@ -30,7 +30,7 @@ class NavigationController:
         self.current_window = Toplevel(self.root)
 
         # Initialize the bill_window and pass the new window and the controller
-        billing_window_instance = bill_window(self.current_window, self)
+        billing_window_instance = bill_window(self.current_window, self, username)
 
         # Setup the billing UI
         billing_window_instance.setup_billing_ui()
@@ -46,10 +46,4 @@ class NavigationController:
             self.current_window.destroy()
         exit()
 
-# Entry point
-# if __name__ == "__main__":
-#
-#     root = Tk()
-#
-#     controller = NavigationController(root)
-#     controller.show_login()
+

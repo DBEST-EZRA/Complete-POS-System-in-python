@@ -114,7 +114,7 @@ class LoginUI:
         if response["success"]:
             messagebox.showinfo("Login Successful", response["message"])
             self.root.withdraw()  # Hide login window
-            self.controller.show_billing_window()  # Show the billing window
+            self.controller.show_billing_window(username)  # Show the billing window
         else:
             messagebox.showerror("Error", response["message"])
             self.password_entry.delete(0, END)

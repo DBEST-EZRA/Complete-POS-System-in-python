@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a74222b-1c95-402f-af8b-47c7d78ab007" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Images/admin_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/employee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/main1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/main1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/main2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/POS-Hamza.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/POS-Hamza.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/add_employee.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/add_employee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/add_product.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/add_product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/admin.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/admin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/bill_window.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/bill_window.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/update_employee.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/update_employee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/update_product.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/update_product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill_ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emp_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/navigation_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pos_database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.db" beforeDir="false" afterPath="$PROJECT_DIR$/store.db" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2nbOC5eJ1L5xreLn1luCBKvUYFv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a74222b-1c95-402f-af8b-47c7d78ab007" name="Changes" comment="" />
+      <created>1729238183286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729238183286</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
